@@ -1,6 +1,12 @@
 .number_input {
     margin-bottom: 5px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-color: red;
+}
+
+.number_input:focus {
+  border-color: blue;
+  outline: 0;
 }
 
 .inline {
