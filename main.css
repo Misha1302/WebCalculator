@@ -1,0 +1,23 @@
+.number_input {
+    margin-bottom: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.inline {
+    display: inline;
+    white-space: pre;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.binary_operation {
+    background-color: yellowgreen;
+    border-color: black;
+    border-width: 1.5px;
+    padding: 0px 10px;
+    font-size: 30px;
+}
+
+.binary_operation:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
