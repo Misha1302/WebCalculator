@@ -1,24 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My super puper calculator</title>
-    
     <link rel="stylesheet" href="main.css">
     <script src="main.js"></script>
 </head>
+
 <body>
-    <h1 id="Result">Result: 0</h1>
+    <h1>Result: <span id="result">0</span></h1>
 
-    <p class="inline">first number:   </p><input id="first_number" class="number_input"></input> <br>
-    <p class="inline">second number:  </p><input id="second_number" class="number_input"></input> <br>
-    <br>
+    <div>
+        <span>number:</span>
+        <input type="number" id="first_number" />
+    </div>
 
-    <button id="add" class="binary_operation">+</button>
-    <button id="sub" class="binary_operation">-</button>
-    <button id="mul" class="binary_operation">*</button>
-    <button id="div" class="binary_operation">/</button>
+    <div>
+        <span>number:</span>
+        <input type="number" id="second_number" />
+    </div>
+
+    <div class="with-top-padding">
+        <button id="add">+</button>
+        <button id="sub">-</button>
+        <button id="mul">*</button>
+        <button id="div">/</button>
+    </div>
 </body>
+
 </html>
