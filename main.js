@@ -1,28 +1,18 @@
-window.onload = main;
+window.onload = () => {
+    const calc = new Calculator()
 
-
-
-let result;
-let firstNumber;
-let secondNumber;
-
-function main() {
-    let addBtn = document.getElementById("add");
-    let subBtn = document.getElementById("sub");
-    let mulBtn = document.getElementById("mul");
-    let divBtn = document.getElementById("div");
-    
-    result = document.getElementById("Result");
-    firstNumber = document.getElementById("first_number");
-    secondNumber = document.getElementById("second_number");
-
-    addBtn.onclick = () => set_result((a, b) => a + b);
-    subBtn.onclick = () => set_result((a, b) => a - b);
-    mulBtn.onclick = () => set_result((a, b) => a * b);
-    divBtn.onclick = () => set_result((a, b) => a / b);
+    add.onclick = () => result.innerHTML = calc.summ(Number(first_number.value), Number(second_number.value))
+    sub.onclick = () => result.innerHTML = calc.sub(Number(first_number.value), Number(second_number.value))
+    mul.onclick = () => result.innerHTML = calc.mult(Number(first_number.value), Number(second_number.value))
+    div.onclick = () => result.innerHTML = calc.div(Number(first_number.value), Number(second_number.value))
 }
 
-function set_result(func) {
-    let a = func(Number(firstNumber.value), Number(secondNumber.value));
-    result.textContent = "Result: " + a;
+class Calculator {
+    summ = (a, b) => a + b
+
+    sub = (a, b) => a - b
+
+    mult = (a, b) => a * b
+
+    div = (a, b) => b != 0 ? a / b : NaN
 }
